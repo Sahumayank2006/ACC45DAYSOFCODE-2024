@@ -1,4 +1,4 @@
-// Medium category question - AIRLINE RESTRICTION 
+// Medium category question - AIRLINE RESTRICTION.
 import java.util.*;
 class amitycodingchallenge
 {
