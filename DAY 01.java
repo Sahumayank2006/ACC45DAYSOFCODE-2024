@@ -4,13 +4,13 @@ class amitycodingchallenge
 {
 	public static void main (String[] args) 	{
 	Scanner sc=new Scanner(System.in);
-	int T=sc.nextInt();
+	int T=sc.nextInt();// input number of test cases
 	for(int i=1;i<=T;i++){
-	    int A=sc.nextInt();
-	    int B=sc.nextInt();
-	    int C=sc.nextInt();
-	    int D=sc.nextInt();
-	    int E=sc.nextInt();
+	    int A=sc.nextInt();//first bag weight carry by passenger
+	    int B=sc.nextInt();//second bag weight carry by passenger
+	    int C=sc.nextInt();//third bag weight carry by passenger
+	    int D=sc.nextInt();//maximum bags weight for check-in(could by any 2 bag )
+	    int E=sc.nextInt();//maximum bag weight that carry by passenger(could by any bag )
 	    if(A+B <=D && C<=E){
 	        System.out.println("YES");
 	    }
@@ -29,6 +29,8 @@ class amitycodingchallenge
 	}
 }
 /*
+YES denotes person can succesfully proceed for check in as bag carried by person succesfully comply with limit of airline.
+NO denotes person cannot  proceed for check in as bag carried by person notcomply with limit of airline/bag weight too much...
 PROGRAM DESCRIPTION- 
 A PERSON HAS 3 BAG WEIGH A,B,C kg IN WHICH OUT OF 3 BAG
 1.ONLY 2 BAG CAN CHECK IN WHICH THERE WEIGHT MUST NOT EXCEED D kg (2 BAG CAN WE ANY OF FOLLOWING OUT OF 3)
