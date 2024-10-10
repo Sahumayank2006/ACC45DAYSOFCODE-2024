@@ -13,7 +13,7 @@ class CardRemoval {
 
             int[] frequency = new int[11]; // Array to count frequency of numbers 1 to 10
             for (int i = 0; i < N; i++) {
-                frequency[a[i]]++;
+                frequency[a[i]]++;//increase frequency oc card individually
             }
 
             int maxFrequency = 0;
