@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Codechef {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        
+        while (T-- > 0) {
+            int N = sc.nextInt();
+            int[] permutation = new int[N];
+            
+            int left = 1, right = N;
+            for (int i = 0; i < N; i++) {
+                if (i % 2 == 0) {
+                    permutation[i] = left++;
+                } else {
+                    permutation[i] = right--;
+                }
+            }
+            
+            for (int i = 0; i < N; i++) {
+                System.out.print(permutation[i] + " ");
+            }
+            System.out.println();
+        }
+        
+        sc.close();
+    }
+}
